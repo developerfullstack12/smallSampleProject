@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Webpack Test</title>
+
+</head>
+
+<body>
+    <div class="col-12 col-md-6 d-flex order-1 order-md-2 pt-6 pb-0 pt-md-7 pb-md-0 py-xxl-0 pb-xxl-0 h-50 h-md-90">
+        <img class="js-inject-svg absolute -z-10 opacity-30 img-fluid h-100"
+            src="https://xneda.com/themes/b4s/assets/images/pages/web-design-hero.svg" alt="Web design hero image"
+            data-inview="{&quot;fn&quot;:&quot;injectSVG&quot;}" data-parent="#SVGHero">
+        <div class=" w-50 z-50 h-screen ml-20 w-2/5 bottom-0 inset-x-5 text-black text-xs text-left leading-4">
+            <h1 class="my-10 text-4xl">TailWindCss & AlpineJs</h1>
+            <span class="mb-10 justify-center text-xl mx-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Iure
+                vitae,
+                perferendis itaque
+                temporibus
+                dignissimos dolorum nobis doloremque ipsam, impedit nemo labore magni aperiam, voluptas rem illum eius
+                quisquam alias aliquid.</span>
+            <div x-data="{ show: false }">
+                <button
+                    class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ... px-8 py-3 mt-10 text-xl"
+                    @click="show = !show">
+                    Read More
+                </button>
+                <div x-show="show" class="my-16 ">
+                    <h1 class="justify-center text-xl w-screen pr-80 ">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit.
+                        Iure
+                        vitae,
+                        perferendis itaque
+                        temporibus
+                        dignissimos dolorum nobis doloremque ipsam, impedit nemo labore magni aperiam, voluptas rem
+                        illum
+                        eius
+                        quisquam alias aliquid.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure vitae,
+                        perferendis itaque temporibus
+                        dignissimos dolorum nobis doloremque ipsam, impedit nemo labore magni aperiam, voluptas rem
+                        illum
+                        eius
+                        quisquam alias aliquid.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure vitae,
+                        perferendis itaque temporibus
+                        dignissimos dolorum nobis doloremque ipsam, impedit nemo labore magni aperiam, voluptas rem
+                        illum
+                        eius
+                        quisquam alias aliquid.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure vitae,
+                        perferendis itaque temporibus
+                        dignissimos dolorum nobis doloremque ipsam, impedit nemo labore magni aperiam, voluptas rem
+                        illum
+                        eius
+                        quisquam alias aliquid.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+
+</body>
+
+</html>
